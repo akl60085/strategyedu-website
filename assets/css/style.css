@@ -1,7 +1,7 @@
 /* StrategyEdu — shared design system */
 
 :root {
-  --paper: #FAF9F5;
+  --paper: #FFFFFF;
   --paper-raised: #FFFFFF;
   --ink: #141413;
   --ink-soft: #3D3D3A;
@@ -17,30 +17,13 @@
   --radius-lg: 28px;
   --content-w: 1180px;
 
-  /* Fixed panel colors — same in light and dark, text inside is always dark ink */
+  /* Fixed panel colors, text inside is always dark ink */
   --panel-oat: #E3DACC;
   --panel-heather: #CBCADB;
   --panel-cactus: #BCD1CA;
   --panel-sky: #6A9BCC;
   --panel-ink: #141413;
   --panel-ink-soft: #40403C;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #191919;
-    --paper-raised: #232320;
-    --ink: #F5F4ED;
-    --ink-soft: #D1CFC5;
-    --muted: #9C9A92;
-    --accent: #E08F6B;
-    --accent-soft: #3A2A20;
-    --accent2: #6FB39E;
-    --accent2-soft: #20302B;
-    --line: #33332F;
-    --line-strong: #45443E;
-    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
-  }
 }
 
 * { box-sizing: border-box; }
