@@ -102,8 +102,8 @@ p.wide { max-width: none; }
   letter-spacing: -0.01em;
 }
 .brand img {
-  height: 34px;
-  width: auto;
+  height: 40px;
+  width: 164px;
   display: block;
 }
 nav.primary-nav {
