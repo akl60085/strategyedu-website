@@ -5,3 +5,5 @@ dist/
 .env
 .env.local
 *.log
+/StrategyEdu_Training_Programs_Claude_Code.txt
+/docs/StrategyEdu_Training_Programs_Claude_Code.txt
