@@ -292,6 +292,34 @@ section.block.shaded { background: var(--paper-raised); border-top: 1px solid va
   font-family: ui-monospace, monospace; font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase;
   padding: 3px 8px; border-radius: 4px;
 }
+.course-card.signature { border-color: var(--accent2); }
+.course-card.signature::after {
+  content: 'Signature program'; position: absolute; top: -10px; right: 14px;
+  background: var(--accent2); color: #fff;
+  font-family: ui-monospace, monospace; font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 4px;
+}
+.course-card .pipeline { font-size: 0.72rem; line-height: 1.6; color: var(--accent2); }
+
+/* Topics accordion nested inside a course card */
+.course-topics { margin-top: auto; padding-top: 8px; border-top: 1px dashed var(--line); }
+.course-topics summary {
+  cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  font-family: ui-monospace, monospace; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent2);
+}
+.course-topics summary::-webkit-details-marker { display: none; }
+.course-topics summary::after { content: '+'; color: var(--accent); font-size: 1rem; flex: none; }
+.course-topics[open] summary::after { content: '\2212'; }
+.course-topics ul { margin: 10px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; }
+.course-topics li { font-size: 0.83rem; color: var(--ink-soft); }
+
+/* ---------- Flow line (progression / pipeline text) ---------- */
+.flow-line { margin-top: 18px; font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 8px; }
+.flow-line .arrow { color: var(--accent); }
+
+/* ---------- Tag row (custom workshop examples) ---------- */
+.tag-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.tag { background: var(--accent2-soft); color: var(--accent2); font-weight: 600; font-size: 0.82rem; padding: 8px 16px; border-radius: 999px; }
 
 /* ---------- Thesis pull-quote ---------- */
 .thesis {
